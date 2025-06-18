@@ -1,0 +1,28 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "deploy": {
+    "startCommand": "n8n start"
+  },
+  "domains": [
+    {
+      "host": "primary-production-3672.up.railway.app",
+      "port": 5678,
+      "headers": {
+        "Access-Control-Allow-Origin": "https://ulvi17.github.io",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "*"
+      }
+    },
+    {
+      "host": "dayeler.com",
+      "port": 5678,
+      "headers": {
+        "Access-Control-Allow-Origin": "https://ulvi17.github.io",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "*"
+      }
+    }
+  ]
+}
